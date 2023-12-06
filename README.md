@@ -1,2 +1,2 @@
 # Cohort-0-100
- Cohort assingments solutions
+ Cohort assignments solutions : [Cohort Assingments](https://github.com/100xdevs-cohort-2/assignments/tree/master)
