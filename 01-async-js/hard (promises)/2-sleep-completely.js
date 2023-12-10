@@ -1,17 +1,14 @@
 /*
  * Write a function that halts the JS thread (make it busy wait) for a given number of milliseconds.
  * During this time the thread should not be able to do anything else.
+ * the function should return a promise just like before
  */
 
 function sleep (seconds) {
-return new Promise((resolve,reject)=>{
+return new Promise((resolve)=>{
     setTimeout(() => {
-    resolve(`promise was on hold for ${seconds}`);
+    resolve();
     }, seconds);
 });
 }
-sleep(3000).then((res)=>{
-    console.log(res);
-}).catch(err=>{
-    console.log(err);
-})
+module.exports = sleep;
